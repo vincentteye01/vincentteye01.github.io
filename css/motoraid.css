@@ -1,1 +1,5 @@
+html, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+{  font-family: "Open Sans" !important;  }
+div.question {font-size: 18px;}
+h1.text-uppercase {font-size: 38px !important;}
 h1 span.media-heading {font-weight:bolder !important;color: #81489e !important;}

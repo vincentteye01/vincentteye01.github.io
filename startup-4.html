@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Lemon">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/motoraid.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/fonts.google_open-sans.css">
+    <title>MotorAID</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-bottom:12px;">
+            <h1 class="text-uppercase">
+                <a class="text-info pull-left" title="Main Menu" href="index.html" target="_self"
+                   style="font-size: 24px; border: 1px solid #2f2f2f; border-radius: 6px; margin-bottom: 3px;">
+                    <span class="fa-stack">
+                        <i class="fa fa-bars fa-1x"></i>
+                    </span>
+                </a>
+                Motor<span class="media-heading">AID</span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="mainForm" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 text-center panel-body">
+                <h3 id="mainHeader" class="help-block">Motor Won't Start</h3>
+            </div>
+            <br/>
+
+            <div id="mainPage">
+                <div class="form-group">
+                    <div class="question">Down coil is okay but engine does not start
+                        when kicked or starter button is lit?<br/></div>
+                </div>
+                <div id="response"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="btn btn-block btn-primary" onclick="replyYes();">Yes</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a class="btn btn-block btn-default" href="startup-5.html">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function replyYes() {
+        $("div#response").html('<div class="alert alert-success alert-dismissible fade in question" role="alert"> ' +
+            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+            '<span aria-hidden="true">&times;</span></button> ' +
+            '<strong></strong>Check the spark plug</div>'
+        );
+    }
+</script>
+</body>
+</html>
