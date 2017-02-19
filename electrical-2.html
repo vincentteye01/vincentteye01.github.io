@@ -32,21 +32,21 @@
     <div class="row">
         <div id="mainForm" class="col-md-12 col-sm-12 col-xs-12">
             <div class="col-md-12 text-center panel-body">
-                <h3 id="mainHeader" class="help-block">Motor Won't Start</h3>
+                <h3 id="mainHeader" class="help-block">Electrical problems</h3>
             </div>
             <br/>
 
             <div id="mainPage">
                 <div class="form-group">
-                    <div class="question">Battery is fully charged but engine does not start
-                        when kicked or starter button is lit?<br/></div>
+                    <div class="question">The headlight is still on after engine is turn off. Problem persists after
+                        battery terminal is removed and fixed?<br/></div>
                 </div>
                 <div id="response"></div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="btn btn-block btn-primary" onclick="replyYes();">Yes</div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <a class="btn btn-block btn-default" href="startup-4.html">Next</a>
+                    <a class="btn btn-block btn-default" href="index.html">Main Menu</a>
                 </div>
             </div>
         </div>
@@ -58,10 +58,11 @@
 <script type="text/javascript">
     function replyYes() {
         $("div#response").html('<div class="alert alert-success alert-dismissible fade in question" role="alert"> ' +
-            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
-            '<span aria-hidden="true">&times;</span></button> ' +
-            '<strong></strong>Check the top coil</div>'
-        );
+                '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+                '<span aria-hidden="true">&times;</span></button> ' +
+                '<strong></strong>Minor electrical fault detected. Consult expert and report: ' +
+                '<strong>The headlight is still on after engine is turn off, but problem persists after ' +
+                'battery terminal is removed and fixed.</strong> </div>');
     }
 </script>
 </body>
